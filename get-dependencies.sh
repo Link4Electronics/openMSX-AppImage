@@ -13,13 +13,13 @@ echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
 # Comment this out if you need an AUR package
-#make-aur-package PACKAGENAME
+make-aur-package openmsx
 
 # If the application needs to be manually built that has to be done down here
-if [ "${DEVEL_RELEASE-}" = 1 ]; then
-    package=openmsx-git
-else
-    package=openmsx
-fi
-make-aur-package "$package"
-pacman -Q "$package" | awk '{print $2; exit}' > ~/version
+#if [ "${DEVEL_RELEASE-}" = 1 ]; then
+#    package=openmsx-git
+#else
+#    package=openmsx
+#fi
+#make-aur-package "$package"
+#pacman -Q "$package" | awk '{print $2; exit}' > ~/version
