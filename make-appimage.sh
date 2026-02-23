@@ -14,7 +14,7 @@ export STARTUPWMCLASS=
 export DEPLOY_OPENGL=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/openmsx
+quick-sharun /usr/bin/openmsx /usr/share/openmsx
 
 # Additional changes can be done in between here
 
